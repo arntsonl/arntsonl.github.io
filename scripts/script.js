@@ -14,7 +14,7 @@ var data = {
 	"filenames": [],
 	"message": "I got owned",
 	"channel_id": "gtichcgad3b4idix8tdsgdr5qh",
-	"pending_post_id": "",
+	"pending_post_id": Math.random().toString(36).substring(7),
 	"user_id": "",
 	"create_at":1,
 	"state":"loading"
