@@ -19,11 +19,13 @@ var data = {
 	"create_at":1,
 	"state":"loading"
 };
-$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
-	setTimeout(function(){
-		$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
-			return 0;
-		});
-	}, 1000);
-    return 0;
-});
+setTimeout(function(){
+	$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
+		setTimeout(function(){
+			$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
+				return 0;
+			});
+		}, 1000);
+		return 0;
+	});
+}, 1000);
