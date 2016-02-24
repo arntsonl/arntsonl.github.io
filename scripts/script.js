@@ -11,8 +11,6 @@ document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-https://mattermost.cigital.com/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/extra_info
-
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/join', function(data, status){
 	// lets say we were owned in this channel
 	var data = {
