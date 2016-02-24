@@ -22,7 +22,7 @@ document.head.appendChild(jquery);
 		"create_at":1,
 		"state":"loading"
 	};
-	$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/create', data, function(retData,status){
+	$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/create', JSON.stringify(data), function(retData,status){
 	});
 //})
 
