@@ -26,3 +26,4 @@ $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
 	return 0;
 });
+void(0);
