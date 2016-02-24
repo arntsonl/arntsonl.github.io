@@ -20,10 +20,10 @@ var data = {
 	"state":"loading"
 };
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
-   return 0;
+	setTimeout(function(){
+		$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
+			return 0;
+		});
+	}, 1000);
+    return 0;
 });
-
-$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
-	return 0;
-});
-void(0);
