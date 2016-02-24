@@ -11,19 +11,21 @@ document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-//$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/join', function(data, status){
+$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/join', function(data, status){
 	// lets say we were owned in this channel
 	var data = {
 		"filenames": [],
-		"message": "I got pwned",
-		"channel_id": "noeqkwinr38ax8b456yd866amh",
+		"message": "A",
+		"channel_id": "u85yooqb4jrq7ct1pmsooc4j3h",
 		"pending_post_id": "",
 		"user_id": "",
 		"create_at":1,
 		"state":"loading"
 	};
-	$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/create', JSON.stringify(data), function(retData,status){
+	$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/create', JSON.stringify(data), function(retData,status){
+		$.post('/api/v1/channels/u85yooqb4jrq7ct1pmsooc4j3h/leave', function(data, status){
+		});
 	});
-//})
+})
 
 // Finally, lets log ourselves out, fade the screen to white, and write "Owned"
