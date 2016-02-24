@@ -11,7 +11,7 @@ document.head.appendChild(jquery);
 
 // Next, lets add ourselves to the channel "Owned"
 // POST /api/v1/channels/hash/join
-$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/join', function(data, status){
+//$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/join', function(data, status){
 	// lets say we were owned in this channel
 	var data = {
 		"filenames": [],
@@ -22,8 +22,8 @@ $.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/join', function(data, status
 		"create_at":1,
 		"state":"loading"
 	};
-	$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/create', data, function(data,status){
-	})
-})
+	$.post('/api/v1/channels/noeqkwinr38ax8b456yd866amh/create', data, function(retData,status){
+	});
+//})
 
 // Finally, lets log ourselves out, fade the screen to white, and write "Owned"
