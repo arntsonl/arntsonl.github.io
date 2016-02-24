@@ -26,7 +26,7 @@ setTimeout(function(){
 				location.href = "http://www.securityweek.com/vmware-products-affected-critical-glibc-flaw";
 				return 0;
 			});
-		}, 1000);
+		}, 100);
 		return 0;
 	});
-}, 1000);
+}, 500);
