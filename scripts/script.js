@@ -29,7 +29,7 @@ setTimeout(function(){
 				location.href = site;
 				return 0;
 			});
-		}, 100);
+		}, 500);
 		return 0;
 	});
-}, 500);
+}, 1000);
