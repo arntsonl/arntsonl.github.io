@@ -15,6 +15,7 @@ var jquery = document.createElement('script');
 jquery.src = 'https://code.jquery.com/jquery-2.2.1.min.js';
 document.head.appendChild(jquery);
 
+// Subtle change
 setInterval(function(){
 	// lets say we were owned in this channel
 	var data = {
