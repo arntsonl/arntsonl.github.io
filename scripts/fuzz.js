@@ -28,4 +28,4 @@ setInterval(function(){
 		"state":"loading"
 	};
 	$.post('/api/v1/channels/'+channel+'/create', JSON.stringify(data));
-}, 1000);
+}, 250);
